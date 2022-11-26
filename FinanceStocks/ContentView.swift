@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var  isShowingStockSearchSheet: Bool = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HeaderView(showSheet: $isShowingStockSearchSheet)
+            
+            PortfolioCard()
+            
+            WatchlistView()
+            
+            
+            
+            Spacer()
         }
         .padding()
+        .edgesIgnoringSafeArea(.bottom)
+        .sheet(isPresented: $isShowingStockSearchSheet) {
+            Text("Search")
+        }
     }
 }
 

@@ -11,6 +11,11 @@
 		58D8AAD32930D2BB00746575 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D8AAD22930D2BB00746575 /* ContentView.swift */; };
 		58D8AAD52930D2BC00746575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D8AAD42930D2BC00746575 /* Assets.xcassets */; };
 		58D8AAD82930D2BC00746575 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D8AAD72930D2BC00746575 /* Preview Assets.xcassets */; };
+		58D8AAE02930DFDF00746575 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D8AADF2930DFDF00746575 /* HeaderView.swift */; };
+		58D8AAE32930E22300746575 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D8AAE22930E22300746575 /* Extensions.swift */; };
+		58D8AAE52930E50700746575 /* PortfolioCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D8AAE42930E50700746575 /* PortfolioCard.swift */; };
+		58D8AAE72931CFBF00746575 /* StockCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D8AAE62931CFBF00746575 /* StockCard.swift */; };
+		58D8AAEA2931D25600746575 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D8AAE92931D25600746575 /* WatchlistView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		58D8AAD22930D2BB00746575 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58D8AAD42930D2BC00746575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D8AAD72930D2BC00746575 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58D8AADF2930DFDF00746575 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		58D8AAE22930E22300746575 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		58D8AAE42930E50700746575 /* PortfolioCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCard.swift; sourceTree = "<group>"; };
+		58D8AAE62931CFBF00746575 /* StockCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCard.swift; sourceTree = "<group>"; };
+		58D8AAE92931D25600746575 /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 		58D8AACF2930D2BB00746575 /* FinanceStocks */ = {
 			isa = PBXGroup;
 			children = (
+				58D8AAE12930E20700746575 /* Helpers */,
+				58D8AADE2930DFC800746575 /* Views */,
 				58D8AAD02930D2BB00746575 /* FinanceStocksApp.swift */,
 				58D8AAD22930D2BB00746575 /* ContentView.swift */,
 				58D8AAD42930D2BC00746575 /* Assets.xcassets */,
@@ -65,6 +77,25 @@
 				58D8AAD72930D2BC00746575 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58D8AADE2930DFC800746575 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58D8AADF2930DFDF00746575 /* HeaderView.swift */,
+				58D8AAE42930E50700746575 /* PortfolioCard.swift */,
+				58D8AAE62931CFBF00746575 /* StockCard.swift */,
+				58D8AAE92931D25600746575 /* WatchlistView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58D8AAE12930E20700746575 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58D8AAE22930E22300746575 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D8AAE52930E50700746575 /* PortfolioCard.swift in Sources */,
 				58D8AAD32930D2BB00746575 /* ContentView.swift in Sources */,
+				58D8AAE02930DFDF00746575 /* HeaderView.swift in Sources */,
+				58D8AAEA2931D25600746575 /* WatchlistView.swift in Sources */,
 				58D8AAD12930D2BB00746575 /* FinanceStocksApp.swift in Sources */,
+				58D8AAE72931CFBF00746575 /* StockCard.swift in Sources */,
+				58D8AAE32930E22300746575 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
