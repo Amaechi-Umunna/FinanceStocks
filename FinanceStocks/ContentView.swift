@@ -18,14 +18,12 @@ struct ContentView: View {
             
             WatchlistView()
             
-            
-            
             Spacer()
         }
         .padding()
         .edgesIgnoringSafeArea(.bottom)
         .sheet(isPresented: $isShowingStockSearchSheet) {
-            Text("Search")
+            SearchStockView()
         }
     }
 }
