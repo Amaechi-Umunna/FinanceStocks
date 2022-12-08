@@ -25,6 +25,7 @@ struct ContentView: View {
         .sheet(isPresented: $isShowingStockSearchSheet) {
             SearchStockView()
         }
+        
     }
 }
 
