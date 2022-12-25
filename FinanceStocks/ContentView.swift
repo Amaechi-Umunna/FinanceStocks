@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var stocksVM: StocksViewModel = StocksViewModel()
+    
     @State private var  isShowingStockSearchSheet: Bool = false
     
     var body: some View {
         VStack {
             HeaderView(showSheet: $isShowingStockSearchSheet)
             
-            PortfolioCard()
+            PortfolioCard(stocksVM: stocksVM)
             
-            WatchlistView()
+            WatchlistView(stocksVM: stocksVM)
             
             Spacer()
         }
